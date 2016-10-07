@@ -1,0 +1,11 @@
+.main-canvas {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background: white;
+    margin: 10px;
+}
+
+.main-page {
+    margin: 50px;
+}

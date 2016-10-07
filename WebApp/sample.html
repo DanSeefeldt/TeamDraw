@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <head>TeamDraw</head>
+        This is a test!
+        <div>
+        <canvas id="myCanvas" height="100" width="200" style="border:1px solid #000000">
+            
+        </canvas>
+        </div>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+        </script>
+    </body>
+</html>

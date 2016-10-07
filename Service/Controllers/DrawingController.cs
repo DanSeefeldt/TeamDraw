@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -5,6 +6,7 @@ using System.Collections.Generic;
 namespace TeamDraw 
 { 
 
+    [EnableCors("AllowWebClient")]
     public class DrawingController : Controller
     {
         public static List<DrawingObject> objects = new List<DrawingObject>();

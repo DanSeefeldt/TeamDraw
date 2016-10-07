@@ -1,12 +1,14 @@
 FROM  microsoft/dotnet:latest
 
-ADD . /TeamDraw
+COPY ./project.json /TeamDraw/project.json
 
 EXPOSE 5000/tcp
 
 WORKDIR /TeamDraw
 
 RUN dotnet restore
+
+COPY . /TeamDraw
 
 RUN dotnet build
 
